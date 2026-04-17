@@ -1,4 +1,4 @@
-markdown_content = """# Spatiotemporal Patterns of Ride Demand and Determinants of Tip Ratio in NYC High Volume For-Hire Vehicle Trips
+# Spatiotemporal Patterns of Ride Demand and Determinants of Tip Ratio in NYC High Volume For-Hire Vehicle Trips
 
 ## Project Overview
 This project analyzes open-source New York City Taxi & Limousine Commission (TLC) high-volume for-hire vehicle (HVFHV) trip data from 2021 to 2025. The primary objective is to study spatiotemporal variations in ride demand and investigate the factors influencing the tip ratio for services like Uber and Lyft.
