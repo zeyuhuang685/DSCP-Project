@@ -1,62 +1,42 @@
-# DSCP-Project
-Group project for STAT605 : Data Science Computing Project
- 
-# Analysis of High-volume for-hire vehicle Trips Dataset
+markdown_content = """# Spatiotemporal Patterns of Ride Demand and Determinants of Tip Ratio in NYC High Volume For-Hire Vehicle Trips
 
-This project uses open source NYC Taxi & Limousine Commission datasets through from 2021 - 2025. Dataset taxi ride information along with relevant information like trip miles, tips, airport fees and other information which allows to perform statistical analysis like correlation between trip distance, travel time, passenger cost, and driver pay vary across time and location. 
+## Project Overview
+This project analyzes open-source New York City Taxi & Limousine Commission (TLC) high-volume for-hire vehicle (HVFHV) trip data from 2021 to 2025. The primary objective is to study spatiotemporal variations in ride demand and investigate the factors influencing the tip ratio for services like Uber and Lyft.
 
-## Overview
-
-This project analyzes the **TLC Trip Record Data** using **Python and R programming language**.
-
-Goals of the project:
-- Understand patterns in the data
-- Build statistical models like Linear Regression, Logistic Regression, etc. 
-- Generate visualizations and insights for presentation
-
-Main statistical questions proposed to be explored : 
-
-<ul> a) How does ride demand vary across time and space in NYC high-volume for-hire vehicle trips?</ul>
-<ul> b) How do trip distance, travel time, passenger cost, and driver pay vary across time and location?</ul>
-
+## Research Questions
+1.  **Demand Patterns:** How does ride demand vary across time and space in NYC high-volume for-hire vehicle trips?
+2.  **Tipping Determinants:** To what extent do factors such as trip distance, pickup time period, trip duration, and shared ride status influence the tip ratio (tips divided by passenger fare)?
+3.  **Variable Correlation:** How do trip distance, travel time, passenger cost, and driver pay vary across different times and locations?
 
 ## Dataset
+The project utilizes the **TLC Trip Record Data** provided by the City of New York.
+* **Data Source:** [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+* **Format:** `.parquet` files partitioned by month.
+* **Key Variables:**
+    * `pickup_datetime` & `dropoff_datetime`
+    * `PULocationID` & `DOLocationID` (Taxi Zones)
+    * `trip_miles` & `trip_time`
+    * `base_passenger_fare`, `tips`, `tolls`, and `driver_pay`
+    * `shared_request_flag` & `shared_match_flag`
+    * `airport_fee` and `congestion_surcharge`
 
-Source of the dataset: <a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"> Link </a>
+## Methodology & Computational Steps
+Given the large-scale nature of the dataset (monthly files from 2021–2025), this project leverages **parallel computing** for efficient processing.
 
+1.  **Parallel Processing:** Data is processed by month. Each job reads, cleans, and summarizes one monthly file.
+2.  **Data Cleaning:** Removal of invalid observations and construction of ratio variables (e.g., tip ratio).
+3.  **Aggregation:** Combining monthly outputs for comprehensive spatiotemporal analysis.
+4.  **Statistical Analysis:** * Descriptive summaries and visualizations.
+    * Spatiotemporal aggregation to identify high-demand clusters.
+    * Regression models (Linear, Logistic, etc.) to evaluate determinants of tipping behavior.
 
-Dataset includes variables such as:
+## Technologies Used
+* **Languages:** R and Python
+* **Data Handling:** `arrow` (for Parquet files)
+* **Computing Environment:** CHTC / HTCondor for distributed parallel processing.
 
-| Variable | Type | Description |
-|----------|------|-------------|
-| hvfhs_license_num | Categorical | License number of the High-Volume For-Hire Service provider (e.g., Uber, Lyft). |
-| dispatching_base_num | Categorical | Identifier for the base company that dispatched the trip. |
-| originating_base_num | Categorical | Identifier for the base where the trip originated. |
-| request_datetime | Datetime | Timestamp when the passenger requested the ride. |
-| on_scene_datetime | Datetime | Time when the driver arrived at the pickup location. |
-| pickup_datetime | Datetime | Timestamp when the passenger was picked up and the trip began. |
-| dropoff_datetime | Datetime | Timestamp when the passenger was dropped off and the trip ended. |
-| PULocationID | Categorical (ID) | Taxi zone ID where the passenger was picked up. |
-| DOLocationID | Categorical (ID) | Taxi zone ID where the passenger was dropped off. |
-| trip_miles | Numeric (continuous) | Distance of the trip in miles. |
-| trip_time | Numeric (continuous) | Duration of the trip in seconds. |
-| base_passenger_fare | Numeric (continuous) | Base fare charged to the passenger. |
-| tolls | Numeric (continuous) | Total toll charges incurred during the trip. |
-| bcf | Numeric (continuous) | Black Car Fund fee applied to the trip. |
-| sales_tax | Numeric (continuous) | Sales tax applied to the trip fare. |
-| congestion_surcharge | Numeric (continuous) | Surcharge applied for trips in congestion pricing zones. |
-| airport_fee | Numeric (continuous) | Fee applied for airport pickups or drop-offs. |
-| tips | Numeric (continuous) | Tip amount paid by the passenger. |
-| driver_pay | Numeric (continuous) | Amount paid to the driver for the trip. |
-| shared_request_flag | Binary / Categorical | Indicates whether a shared ride was requested (Y/N). |
-| shared_match_flag | Binary / Categorical | Indicates whether the ride was successfully matched with another passenger. |
-| access_a_ride_flag | Binary / Categorical | Indicates whether the trip was part of the Access-A-Ride accessible transportation program. |
-| wav_request_flag | Binary / Categorical | Indicates whether a wheelchair-accessible vehicle was requested. |
-| wav_match_flag | Binary / Categorical | Indicates whether a wheelchair-accessible vehicle was successfully matched. |
-| cbd_congestion_fee | Numeric (continuous) | Congestion fee applied for trips entering the Central Business District (CBD). |
-
-Data format:
-- `.parquet`
-
-
-
+## How to Read the Data (R Example)
+```r
+# The raw data is divided into monthly parquet files.
+# Example for January 2021:
+df_2021_01 <- arrow::read_parquet("fhvhv_tripdata_2021-01.parquet")
