@@ -1,0 +1,21 @@
+universe=vanilla
+
+log    =    log/$(Cluster)_$(year)_$(month).log
+error  =  error/$(Cluster)_$(year)_$(month).err
+output = output/$(Cluster)_$(year)_$(month).out
+
+requirements = (HasCHTCStaging == true)
+
+executable = ./download_data.sh
+
+arguments = $(year) $(month)
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = download_data.sh
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 4GB
+
+queue year, month from year_month.txt
