@@ -1,0 +1,22 @@
+# Original script is from calling_R_python_torch.tar provided in class STAT_605_SP_2026
+
+log    = log/$(Cluster).log
+error  = error/$(Cluster).err
+output = output/$(Cluster).out
+
+container_image = r_packages.sif
+requirements = (HasCHTCStaging == true)
+
+executable = data_summary.sh
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = data_summary.R
+
+arguments = $(filename)
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 5GB
+
+queue filename matching /home/groups/STAT_DSCP/Group4_NYCTaxi/*.parquet

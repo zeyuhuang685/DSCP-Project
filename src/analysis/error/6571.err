@@ -1,0 +1,20 @@
+
+Attaching package: 'arrow'
+
+The following object is masked from 'package:utils':
+
+    timestamp
+
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Error: IOError: Failed to open local file 'NA'. Detail: [errno 2] No such file or directory
+Execution halted

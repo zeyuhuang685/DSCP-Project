@@ -1,0 +1,20 @@
+
+Attaching package: 'arrow'
+
+The following object is masked from 'package:utils':
+
+    timestamp
+
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Error: Invalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Execution halted
