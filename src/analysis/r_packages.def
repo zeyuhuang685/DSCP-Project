@@ -1,41 +1,8 @@
-# Original source : calling_R_python_torch.tar provided in class - 605_SP_2026
-
 # This apptainer ".def" file is a recipe for building a container.
+
 Bootstrap: docker
 From: rocker/tidyverse:4.3.1
 
 %post
-    # Update and install system dependencies
-    # Added libudunits2-dev and libgdal-dev for the sf package
-    apt-get update && apt-get install -y --no-install-recommends \
-        libcurl4-openssl-dev \
-        libssl-dev \
-        libxml2-dev \
-        cmake \
-        libudunits2-dev \
-        libgdal-dev \
-        libgeos-dev \
-        libproj-dev \
-        && rm -rf /var/lib/apt/lists/*
-
-    # Set environment variables for Arrow (helps with compilation if needed)
-    export ARROW_R_DEV=TRUE
-
-    # Install R packages
-    # Note: tidyverse includes dplyr, ggplot2, and lubridate already, 
-    # but explicitly listing them doesnt hurt for clarity.
-    R -e "install.packages(c( \
-        'arrow', \
-        'sf', \
-        'scales' \
-    ), dependencies=TRUE, repos='https://cloud.r-project.org/')"
-
-%environment
-    export LC_ALL=C
-    export PATH=/opt/bin:$PATH
-
-%runscript
-    exec R "$@"
-
-
+    R -e "install.packages(c('tidyverse', 'FITSio', 'dplyr', 'arrow', 'ggplot2', 'lubridate', 'sf', 'scales'),dependencies=TRUE, repos='http://cran.rstudio.com/')"
 

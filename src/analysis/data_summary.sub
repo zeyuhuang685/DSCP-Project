@@ -4,7 +4,12 @@ log    = log/$(Cluster)_$(Process).log
 error  = error/$(Cluster)_$(Process).err
 output = output/$(Cluster)_$(Process).out
 
+<<<<<<< Updated upstream
 container_image = file:///staging/jgillett/R_tidyverse_FITSio.sif
+=======
+#container_image = file:///staging/jgillett/R_tidyverse_FITSio.sif
+container_image = r_packages.sif
+>>>>>>> Stashed changes
 requirements = (HasCHTCStaging == true)
 
 executable = ./data_summary.sh
