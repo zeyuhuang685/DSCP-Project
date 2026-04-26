@@ -1,0 +1,55 @@
+000 (7416.008.000) 2026-04-25 18:15:30 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (7416.008.000) 2026-04-25 18:19:45 Started transferring input files
+	Transferring to host: <128.105.69.131:9618?addrs=128.105.69.131-9618+[2607-f388-2200-100-1270-fdff-fe56-6724]-9618&alias=e4080.chtc.wisc.edu&noUDP&sock=slot1_7_57475_163a_4101>
+...
+040 (7416.008.000) 2026-04-25 18:19:53 Finished transferring input files
+...
+001 (7416.008.000) 2026-04-25 18:19:54 Job executing on host: <128.105.69.131:9618?addrs=128.105.69.131-9618+[2607-f388-2200-100-1270-fdff-fe56-6724]-9618&alias=e4080.chtc.wisc.edu&noUDP&sock=startd_10470_20ab>
+	SlotName: slot1_7@e4080.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_362982/scratch"
+	Cpus = 2
+	Disk = 8388608
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 10240
+...
+006 (7416.008.000) 2026-04-25 18:20:03 Image size of job updated: 3701916
+	3616  -  MemoryUsage of job (MB)
+	3701916  -  ResidentSetSize of job (KB)
+...
+006 (7416.008.000) 2026-04-25 18:24:30 Image size of job updated: 3990920
+	3618  -  MemoryUsage of job (MB)
+	3703964  -  ResidentSetSize of job (KB)
+...
+040 (7416.008.000) 2026-04-25 18:24:30 Started transferring output files
+...
+040 (7416.008.000) 2026-04-25 18:24:39 Finished transferring output files
+...
+021 (7416.008.000) 2026-04-25 18:24:39 Error from starter on slot1_7@e4080.chtc.wisc.edu:
+	STARTER at 128.105.69.131 failed to send file(s) to <128.105.76.6:9618>; SHADOW at 128.105.76.6 - |Error: writing to file /home/sbasnet3/DSCP-Project/src/clean_data/fhvhv_tripdata_2021-09.csv: (errno 122) Disk quota exceeded
+	Code 12 Subcode 122
+...
+004 (7416.008.000) 2026-04-25 18:24:41 Job was evicted. Code 12 Subcode 122
+	(0) CPU times
+		Usr 0 00:02:29, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	1190639289  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at access point learn while receiving files from execution point slot1_7@e4080.chtc.wisc.edu. Details: writing to file /home/sbasnet3/DSCP-Project/src/clean_data/fhvhv_tripdata_2021-09.csv: (errno 122) Disk quota exceeded
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.53        2         2 
+	   Disk (KB)            : 4238904     8388608   8388608 
+	   GPUs                 :                             0 
+	   IoHeavy              :                             0 
+	   Memory (MB)          :    3618       10240     10240 
+	   TimeExecute (s)      :     276                       
+	   TimeSlotBusy (s)     :     294                       
+...
+012 (7416.008.000) 2026-04-25 18:24:41 Job was held.
+	Transfer output files failure at access point learn while receiving files from execution point slot1_7@e4080.chtc.wisc.edu. Details: writing to file /home/sbasnet3/DSCP-Project/src/clean_data/fhvhv_tripdata_2021-09.csv: (errno 122) Disk quota exceeded
+	Code 12 Subcode 122
+...
+009 (7416.008.000) 2026-04-25 18:27:13 Job was aborted.
+	via condor_rm (by user sbasnet3)
+...

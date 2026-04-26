@@ -1,0 +1,43 @@
+000 (7409.010.000) 2026-04-25 17:26:01 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (7409.010.000) 2026-04-25 17:30:25 Started transferring input files
+	Transferring to host: <128.105.69.135:9618?addrs=128.105.69.135-9618+[2607-f388-2200-100-1270-fdff-fe56-635c]-9618&alias=e4084.chtc.wisc.edu&noUDP&sock=slot1_7_64493_e718_8104>
+...
+040 (7409.010.000) 2026-04-25 17:30:30 Finished transferring input files
+...
+001 (7409.010.000) 2026-04-25 17:30:31 Job executing on host: <128.105.69.135:9618?addrs=128.105.69.135-9618+[2607-f388-2200-100-1270-fdff-fe56-635c]-9618&alias=e4084.chtc.wisc.edu&noUDP&sock=startd_64425_c513>
+	SlotName: slot1_7@e4084.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_3913700/scratch"
+	Cpus = 2
+	Disk = 8388608
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 10240
+...
+006 (7409.010.000) 2026-04-25 17:30:40 Image size of job updated: 4143660
+	4047  -  MemoryUsage of job (MB)
+	4143660  -  ResidentSetSize of job (KB)
+...
+006 (7409.010.000) 2026-04-25 17:32:51 Image size of job updated: 4301372
+	4049  -  MemoryUsage of job (MB)
+	4145708  -  ResidentSetSize of job (KB)
+...
+004 (7409.010.000) 2026-04-25 17:32:51 Job was evicted. Code 1023 Subcode 0
+	(0) CPU times
+		Usr 0 00:01:22, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	1208015342  -  Run Bytes Received By Job
+	Reason: via condor_rm (by user sbasnet3)
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.81        2         2 
+	   Disk (KB)            : 2585352     8388608   8388608 
+	   GPUs                 :                             0 
+	   IoHeavy              :                             0 
+	   Memory (MB)          :    4049       10240     10240 
+	   TimeExecute (s)      :     140                       
+	   TimeSlotBusy (s)     :     146                       
+...
+009 (7409.010.000) 2026-04-25 17:32:51 Job was aborted.
+	via condor_rm (by user sbasnet3)
+...

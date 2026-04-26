@@ -1,0 +1,21 @@
+# Original script is from calling_R_python_torch.tar provided in class STAT_605_SP_2026
+
+log    = log/$(Cluster)_$(Process).log
+error  = error/$(Cluster)_$(Process).err
+output = output/$(Cluster)_$(Process).out
+
+container_image = file:///staging/jgillett/R_tidyverse_FITSio.sif
+requirements = (HasCHTCStaging == true)
+
+executable = ./data_summary.sh
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = data_summary.R
+
+request_cpus = 2
+request_memory = 10GB
+request_disk = 20GB
+
+queue

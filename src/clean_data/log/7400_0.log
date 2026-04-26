@@ -1,0 +1,43 @@
+000 (7400.000.000) 2026-04-25 16:40:30 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (7400.000.000) 2026-04-25 16:42:06 Started transferring input files
+	Transferring to host: <128.105.69.188:9618?addrs=128.105.69.188-9618+[2607-f388-2200-100-1270-fdff-fe56-bf54]-9618&alias=e4040.chtc.wisc.edu&noUDP&sock=slot1_10_2072534_7170_915>
+...
+040 (7400.000.000) 2026-04-25 16:42:15 Finished transferring input files
+...
+001 (7400.000.000) 2026-04-25 16:42:16 Job executing on host: <128.105.69.188:9618?addrs=128.105.69.188-9618+[2607-f388-2200-100-1270-fdff-fe56-bf54]-9618&alias=e4040.chtc.wisc.edu&noUDP&sock=startd_16698_0481>
+	SlotName: slot1_10@e4040.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_3033482/scratch"
+	Cpus = 2
+	Disk = 8388608
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 10240
+...
+006 (7400.000.000) 2026-04-25 16:42:19 Image size of job updated: 116
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (7400.000.000) 2026-04-25 16:42:19 Started transferring output files
+...
+040 (7400.000.000) 2026-04-25 16:42:19 Finished transferring output files
+...
+005 (7400.000.000) 2026-04-25 16:42:20 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	175  -  Run Bytes Sent By Job
+	796952636  -  Run Bytes Received By Job
+	175  -  Total Bytes Sent By Job
+	796952636  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        2         2 
+	   Disk (KB)            :   778372  8388608   8388608 
+	   GPUs                 :                           0 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :        0    10240     10240 
+	   TimeExecute (s)      :        3                    
+	   TimeSlotBusy (s)     :       14                    
+...

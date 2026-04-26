@@ -1,0 +1,43 @@
+000 (7409.004.000) 2026-04-25 17:26:01 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (7409.004.000) 2026-04-25 17:28:52 Started transferring input files
+	Transferring to host: <128.105.69.195:9618?addrs=128.105.69.195-9618+[2607-f388-2200-100-1270-fdff-fe56-6f44]-9618&alias=e4048.chtc.wisc.edu&noUDP&sock=slot1_35_585564_8f7d_4394>
+...
+040 (7409.004.000) 2026-04-25 17:29:03 Finished transferring input files
+...
+001 (7409.004.000) 2026-04-25 17:29:04 Job executing on host: <128.105.69.195:9618?addrs=128.105.69.195-9618+[2607-f388-2200-100-1270-fdff-fe56-6f44]-9618&alias=e4048.chtc.wisc.edu&noUDP&sock=startd_16883_e986>
+	SlotName: slot1_35@e4048.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2070068/scratch"
+	Cpus = 2
+	Disk = 8388608
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 10240
+...
+006 (7409.004.000) 2026-04-25 17:29:12 Image size of job updated: 3898820
+	3808  -  MemoryUsage of job (MB)
+	3898820  -  ResidentSetSize of job (KB)
+...
+040 (7409.004.000) 2026-04-25 17:30:32 Started transferring output files
+...
+040 (7409.004.000) 2026-04-25 17:30:42 Finished transferring output files
+...
+005 (7409.004.000) 2026-04-25 17:30:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:01:19, Sys 0 00:00:11  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:19, Sys 0 00:00:11  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3123366105  -  Run Bytes Sent By Job
+	1184205306  -  Run Bytes Received By Job
+	3123366105  -  Total Bytes Sent By Job
+	1184205306  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       1.00        2         2 
+	   Disk (KB)            : 4206724     8388608   8388608 
+	   GPUs                 :                             0 
+	   IoHeavy              :                             0 
+	   Memory (MB)          :    3808       10240     10240 
+	   TimeExecute (s)      :      88                       
+	   TimeSlotBusy (s)     :     110                       
+...

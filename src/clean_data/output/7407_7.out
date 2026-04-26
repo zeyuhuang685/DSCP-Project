@@ -1,0 +1,2 @@
+I was looking for: /home/groups/STAT_DSCP/Group4_NYCTaxi/fhvhv_tripdata_2021-08.parquet 
+Files actually present:, _condor_stderr, _condor_stdout, 00_extract_parquet.R, 00_extract_parquet.sh, fhvhv_tripdata_2021-08.parquet, home, R_tidyverse_FITSio.sif, scratch, tmp, var, var_tmp

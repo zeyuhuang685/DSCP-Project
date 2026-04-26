@@ -1,0 +1,10 @@
+cp: cannot stat '/home/groups/STAT_DSCP/Group4_NYCTaxi/fhvhv_tripdata_2021-03.parquet': No such file or directory
+
+Attaching package: ‘arrow’
+
+The following object is masked from ‘package:utils’:
+
+    timestamp
+
+Error: IOError: Failed to open local file '/home/groups/STAT_DSCP/Group4_NYCTaxi/fhvhv_tripdata_2021-03.csv'. Detail: [errno 2] No such file or directory
+Execution halted
