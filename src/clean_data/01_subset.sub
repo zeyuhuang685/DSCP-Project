@@ -16,4 +16,4 @@ request_cpus = 2
 request_memory = 10GB
 request_disk = 8GB
 
-queue filename matching /home/groups/STAT_DSCP/Group4_NYCTaxi/fhvhv_tripdata_2021-01.csv
+queue filename matching /home/groups/STAT_DSCP/Group4_NYCTaxi/*.csv

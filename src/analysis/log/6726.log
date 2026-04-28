@@ -1,0 +1,50 @@
+000 (6726.000.000) 2026-04-20 19:33:27 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (6726.000.000) 2026-04-20 19:34:11 Started transferring input files
+	Transferring to host: <128.105.68.15:9618?addrs=128.105.68.15-9618+[2607-f388-2200-100-b226-28ff-fe51-615c]-9618&alias=e2008.chtc.wisc.edu&noUDP&sock=slot1_23_960781_e177_75842>
+...
+040 (6726.000.000) 2026-04-20 19:34:40 Finished transferring input files
+...
+001 (6726.000.000) 2026-04-20 19:34:40 Job executing on host: <128.105.68.15:9618?addrs=128.105.68.15-9618+[2607-f388-2200-100-b226-28ff-fe51-615c]-9618&alias=e2008.chtc.wisc.edu&noUDP&sock=startd_9345_78a0>
+	SlotName: slot1_23@e2008.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_583055/scratch"
+	Cpus = 2
+	Disk = 5242880
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 5120
+...
+006 (6726.000.000) 2026-04-20 19:34:49 Image size of job updated: 2065360
+	2017  -  MemoryUsage of job (MB)
+	2065360  -  ResidentSetSize of job (KB)
+...
+006 (6726.000.000) 2026-04-20 19:35:57 Image size of job updated: 5219244
+	5097  -  MemoryUsage of job (MB)
+	5219244  -  ResidentSetSize of job (KB)
+...
+021 (6726.000.000) 2026-04-20 19:35:57 Error from starter on slot1_23@e2008.chtc.wisc.edu:
+	Job has gone over cgroup memory limit of 5120 megabytes. Last measured usage: 5120 megabytes.  Consider resubmitting with a higher request_memory.
+	Code 34 Subcode 102
+...
+004 (6726.000.000) 2026-04-20 19:36:01 Job was evicted. Code 34 Subcode 102
+	(0) CPU times
+		Usr 0 00:02:47, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	3686739983  -  Run Bytes Received By Job
+	Reason: Error from slot1_23@e2008.chtc.wisc.edu: Job has gone over cgroup memory limit of 5120 megabytes. Last measured usage: 5120 megabytes.  Consider resubmitting with a higher request_memory.
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        2         2 
+	   Disk (KB)            :  3600436  5242880   5242880 
+	   GPUs                 :                           0 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :     5097     5120      5120 
+	   TimeSlotBusy (s)     :      106                    
+...
+012 (6726.000.000) 2026-04-20 19:36:01 Job was held.
+	Error from slot1_23@e2008.chtc.wisc.edu: Job has gone over cgroup memory limit of 5120 megabytes. Last measured usage: 5120 megabytes.  Consider resubmitting with a higher request_memory.
+	Code 34 Subcode 102
+...
+009 (6726.000.000) 2026-04-20 19:38:27 Job was aborted.
+	via condor_rm (by user sbasnet3)
+...

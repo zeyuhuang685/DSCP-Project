@@ -1,0 +1,58 @@
+fhvhv_tripdata_2021-01.csv
+/home/groups/STAT_DSCP/Group4_NYCTaxi/fhvhv_tripdata_2021-01.csv
+Hello hvfhs_license_num  dispatching_base_num originating_base_num
+ Length:11908468    Length:11908468      Length:11908468     
+ Class :character   Class :character     Class :character    
+ Mode  :character   Mode  :character     Mode  :character    
+                                                             
+                                                             
+                                                             
+                                                             
+ request_datetime   on_scene_datetime  pickup_datetime    dropoff_datetime  
+ Length:11908468    Length:11908468    Length:11908468    Length:11908468   
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+  PULocationID    DOLocationID     trip_miles        trip_time      
+ Min.   :  1.0   Min.   :  1.0   Min.   :  0.000   Min.   :    0.0  
+ 1st Qu.: 69.0   1st Qu.: 71.0   1st Qu.:  1.560   1st Qu.:  524.0  
+ Median :136.0   Median :139.0   Median :  2.840   Median :  804.0  
+ Mean   :134.9   Mean   :138.6   Mean   :  4.512   Mean   :  954.3  
+ 3rd Qu.:208.0   3rd Qu.:213.0   3rd Qu.:  5.570   3rd Qu.: 1216.0  
+ Max.   :265.0   Max.   :265.0   Max.   :738.950   Max.   :59143.0  
+                                                                    
+ base_passenger_fare     tolls              bcf            sales_tax      
+ Min.   :-246.90     Min.   :  0.000   Min.   : 0.0000   Min.   :  0.000  
+ 1st Qu.:   8.70     1st Qu.:  0.000   1st Qu.: 0.2600   1st Qu.:  0.750  
+ Median :  13.30     Median :  0.000   Median : 0.3900   Median :  1.140  
+ Mean   :  17.19     Mean   :  0.709   Mean   : 0.5285   Mean   :  1.482  
+ 3rd Qu.:  21.20     3rd Qu.:  0.000   3rd Qu.: 0.6400   3rd Qu.:  1.850  
+ Max.   :1532.67     Max.   :113.970   Max.   :47.8500   Max.   :140.300  
+                                                                          
+ congestion_surcharge  airport_fee            tips            driver_pay     
+ Min.   :0.000        Min.   :0          Min.   :  0.0000   Min.   : -11.65  
+ 1st Qu.:0.000        1st Qu.:0          1st Qu.:  0.0000   1st Qu.:   6.68  
+ Median :0.000        Median :0          Median :  0.0000   Median :  10.63  
+ Mean   :0.867        Mean   :0          Mean   :  0.4998   Mean   :  13.92  
+ 3rd Qu.:2.750        3rd Qu.:0          3rd Qu.:  0.0000   3rd Qu.:  17.28  
+ Max.   :5.500        Max.   :0          Max.   :200.0000   Max.   :1041.77  
+                      NA's   :11902548                                       
+ shared_request_flag shared_match_flag  access_a_ride_flag wav_request_flag  
+ Length:11908468     Length:11908468    Length:11908468    Length:11908468   
+ Class :character    Class :character   Class :character   Class :character  
+ Mode  :character    Mode  :character   Mode  :character   Mode  :character  
+                                                                             
+                                                                             
+                                                                             
+                                                                             
+ wav_match_flag    
+ Length:11908468   
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   
+                   

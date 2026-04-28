@@ -1,0 +1,7 @@
+log = interactive_r_packages.log
+transfer_input_files = r_packages.def
++IsBuildJob = true
+request_cpus = 1
+request_memory = 4GB
+request_disk = 10GB
+queue

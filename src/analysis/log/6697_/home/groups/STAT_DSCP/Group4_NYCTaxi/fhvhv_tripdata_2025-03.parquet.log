@@ -1,0 +1,36 @@
+000 (6697.014.000) 2026-04-20 17:58:33 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (6697.014.000) 2026-04-20 17:59:09 Started transferring input files
+	Transferring to host: <128.105.69.230:9618?addrs=128.105.69.230-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-17bc]-9618&alias=e2613.chtc.wisc.edu&noUDP&sock=slot1_56_1963934_eb30_118738>
+...
+040 (6697.014.000) 2026-04-20 17:59:16 Finished transferring input files
+...
+040 (6697.014.000) 2026-04-20 17:59:17 Started transferring output files
+...
+040 (6697.014.000) 2026-04-20 17:59:17 Finished transferring output files
+...
+021 (6697.014.000) 2026-04-20 17:59:17 Error from starter on slot1_56@e2613.chtc.wisc.edu:
+	Failed to transfer files: FILETRANSFER:1:non-zero exit (1) from /usr/libexec/condor/curl_plugin. |Error: Couldn't open file /staging/sbasnet3/r_packages.sif (with environment: http_proxy='http://squid-cs-2360.chtc.wisc.edu:3128', https_proxy='') ( URL file = file:///staging/sbasnet3/r_packages.sif )|
+	Code 12 Subcode 256
+...
+004 (6697.014.000) 2026-04-20 17:59:18 Job was evicted. Code 13 Subcode 256
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Transfer input files failure at execution point slot1_56@e2613.chtc.wisc.edu using protocol file. Details: Couldn't open file /staging/sbasnet3/r_packages.sif (with environment: http_proxy='http://squid-cs-2360.chtc.wisc.edu:3128', https_proxy='') ( URL file = file:///staging/sbasnet3/r_packages.sif )|
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   490053  5242880   5242880 
+	   GPUs                 :                           0 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :              1024      1024 
+...
+012 (6697.014.000) 2026-04-20 17:59:18 Job was held.
+	Transfer input files failure at execution point slot1_56@e2613.chtc.wisc.edu using protocol file. Details: Couldn't open file /staging/sbasnet3/r_packages.sif (with environment: http_proxy='http://squid-cs-2360.chtc.wisc.edu:3128', https_proxy='') ( URL file = file:///staging/sbasnet3/r_packages.sif )|
+	Code 13 Subcode 256
+...
+009 (6697.014.000) 2026-04-20 18:02:10 Job was aborted.
+	via condor_rm (by user sbasnet3)
+...

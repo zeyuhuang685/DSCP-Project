@@ -1,0 +1,51 @@
+000 (6729.000.000) 2026-04-20 19:38:11 Job submitted from host: <128.105.76.6:9618?addrs=128.105.76.6-9618+[2607-f388-2200-100-216-3eff-fe63-f8a5]-9618&alias=learn.chtc.wisc.edu&noUDP&sock=schedd_6739_f8d1>
+...
+040 (6729.000.000) 2026-04-20 19:38:55 Started transferring input files
+	Transferring to host: <128.105.68.158:9618?addrs=128.105.68.158-9618+[2607-f388-2200-100-b226-28ff-fe50-6730]-9618&alias=e2017.chtc.wisc.edu&noUDP&sock=slot1_16_1818557_abb8_90391>
+...
+040 (6729.000.000) 2026-04-20 19:39:19 Finished transferring input files
+...
+001 (6729.000.000) 2026-04-20 19:39:19 Job executing on host: <128.105.68.158:9618?addrs=128.105.68.158-9618+[2607-f388-2200-100-b226-28ff-fe50-6730]-9618&alias=e2017.chtc.wisc.edu&noUDP&sock=startd_9358_635b>
+	SlotName: slot1_16@e2017.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2737821/scratch"
+	Cpus = 2
+	Disk = 5244114
+	GPUs = 0
+	IoHeavy = 0
+	Memory = 5120
+...
+006 (6729.000.000) 2026-04-20 19:39:20 Image size of job updated: 188
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (6729.000.000) 2026-04-20 19:39:20 Started transferring output files
+...
+040 (6729.000.000) 2026-04-20 19:39:20 Finished transferring output files
+...
+021 (6729.000.000) 2026-04-20 19:39:20 Error from starter on slot1_16@e2017.chtc.wisc.edu:
+	STARTER at 128.105.68.158 failed to send file(s) to <128.105.76.6:9618>: |Error: 1 total failures: first failure: reading from file /var/lib/condor/execute/slot1/dir_2737821/scratch/result_*.csv: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <128.105.68.158:40535>
+	Code 13 Subcode 2
+...
+004 (6729.000.000) 2026-04-20 19:39:21 Job was evicted. Code 12 Subcode 2
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	3686740523  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at execution point slot1_16@e2017.chtc.wisc.edu while sending files to access point learn. Details: 1 total failures: first failure: reading from file /var/lib/condor/execute/slot1/dir_2737821/scratch/result_*.csv: (errno 2) No such file or directory
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        2         2 
+	   Disk (KB)            :  3600452  5242880   5244114 
+	   GPUs                 :                           0 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :        0     5120      5120 
+	   TimeExecute (s)      :        1                    
+	   TimeSlotBusy (s)     :       26                    
+...
+012 (6729.000.000) 2026-04-20 19:39:21 Job was held.
+	Transfer output files failure at execution point slot1_16@e2017.chtc.wisc.edu while sending files to access point learn. Details: 1 total failures: first failure: reading from file /var/lib/condor/execute/slot1/dir_2737821/scratch/result_*.csv: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
+009 (6729.000.000) 2026-04-20 19:48:39 Job was aborted.
+	via condor_rm (by user sbasnet3)
+...

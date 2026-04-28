@@ -1,0 +1,24 @@
+# Log, error, and output files
+log    = log/$(Cluster)_$(Process).log
+error  = error/$(Cluster)_$(Process).err
+output = output/$(Cluster)_$(Process).out
+
+container_image = file:///staging/jgillett/R_tidyverse_FITSio.sif
+requirements = (HasCHTCStaging == true)
+
+executable = ./run_analysis.sh
+
+# We pass the filename as the first argument
+arguments = $(filename)
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+# Transfer the R script and the CSV from staging
+transfer_input_files = analysis.R, file:///home/groups/STAT_DSCP/GroupA_NYCTaxi/$(filename)
+
+request_cpus = 1
+request_memory = 3GB
+request_disk = 5GB
+
+# Queue based on a list of filenames in data_list.txt
+queue filename from data_list.txt
